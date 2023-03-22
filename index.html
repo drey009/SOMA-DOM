@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="short icon" href="icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SOMA / DOM </title>
+</head>
+
+<body>
+    <h1>Somando e usando <span>DOM</span> </h1>
+    
+    <div id="calculando">
+        <input type="number" name="value1" id="value1">
+        <p> + </p>       
+        <input type="number" name="value2" id="value2">
+        <input type="button" value="=" id="add" onclick="add()">
+        <br>      
+    </div>
+    <div id="answer"></div>
+    <script>
+        function add(){
+            var v1 = document.getElementById('value1');
+            var v2 = document.querySelector('input#value2');
+            var ans = document.getElementById('answer')
+
+            var n1 = Number(v1.value);
+            var n2 = Number(v2.value);
+            var sum = n1+n2;
+            answer.innerHTML = `A soma entre  o número ${n1} e o número ${n2} é  ${sum}.`
+            
+        }
+    </script>
+    <footer>&copy; Criado por Andrey</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
